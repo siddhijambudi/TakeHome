@@ -1,6 +1,7 @@
 package com.imdb.service;
 
 import org.bson.types.ObjectId;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.stereotype.Component;
 
@@ -9,9 +10,10 @@ import org.springframework.stereotype.Component;
  */
 import org.springframework.data.annotation.Id;
 
+import java.util.Map;
+
 @Document(collection = "MovieTitleBasic")
 public class MovieTitleBasic {
-
     @Id
     public ObjectId _id;
 

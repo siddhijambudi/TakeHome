@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  */
 import org.springframework.data.annotation.Id;
 
-@Document(collection = "Siddhi")
+@Document(collection = "MovieTitleBasic")
 public class MovieTitleBasic {
 
     @Id
@@ -20,7 +20,7 @@ public class MovieTitleBasic {
     public String primaryTitle;
     public String originalTitle;
     public String isAdult;
-    public String startYear;
+    public Integer startYear;
     public String endYear;
     public String runtimeMinutes;
     public String genres;
@@ -73,11 +73,11 @@ public class MovieTitleBasic {
         this.isAdult = isAdult;
     }
 
-    public String getStartYear() {
+    public Integer getStartYear() {
         return startYear;
     }
 
-    public void setStartYear(String startYear) {
+    public void setStartYear(Integer startYear) {
         this.startYear = startYear;
     }
 
